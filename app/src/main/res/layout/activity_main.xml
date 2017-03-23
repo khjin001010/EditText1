@@ -8,28 +8,32 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/edit_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:background="#faaeae"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:hint="성명을 입력해주세요."/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="76dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10px"
-        android:layout_marginLeft="300dp"
+        android:gravity="center"
         android:background="#bc8080"
         android:text="확인"
         android:textColor="#ffffff"
         android:textSize="30sp"/>
 
     <TextView
+        android:id="@+id/txt_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#f2d7d7"
         android:textSize="40sp"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="100dp"
+        android:text="버튼을 눌러보세요!"/>
 
 </LinearLayout>
