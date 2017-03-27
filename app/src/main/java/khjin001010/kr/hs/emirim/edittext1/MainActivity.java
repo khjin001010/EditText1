@@ -8,22 +8,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    EditText myedit;
+    TextView text_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText myedit = (EditText)findViewById(R.id.edit_1);
+        myedit = (EditText)findViewById(R.id.edit_1);
         Button mybutton = (Button) findViewById(R.id.button);
-        final String myStr = myedit.getText().toString();
 
-        final TextView text_1 = (TextView) findViewById(R.id.txt_1);
+        text_1 = (TextView) findViewById(R.id.txt_1);
 
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text_1.setText(myStr);
+                String name = myedit.getText().toString();
+                text_1.setText("입력한 성명은 "+name+"입니다.ㅊ");
             }
         });
 

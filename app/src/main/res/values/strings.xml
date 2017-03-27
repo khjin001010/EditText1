@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EditText1</string>
+    <string name="str_1">버튼을 눌러주세요.</string>
 </resources>
