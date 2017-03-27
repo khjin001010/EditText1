@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String name = myedit.getText().toString();
-                text_1.setText("입력한 성명은 "+name+"입니다.ㅊ");
+                text_1.setText("입력한 성명은 "+name+"입니다.");
             }
         });
 
